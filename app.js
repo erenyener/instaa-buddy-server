@@ -28,7 +28,7 @@ app.use(formidable());
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    var allowedOrigins = ['https://instabuddydev.herokuapp.com/', 'http://localhost:3000'];
+    var allowedOrigins = ['http://instabuddydev.herokuapp.com', 'http://localhost:3000'];
     var origin = req.headers.origin;
     if(allowedOrigins.indexOf(origin) > -1){
         res.setHeader('Access-Control-Allow-Origin', origin);
